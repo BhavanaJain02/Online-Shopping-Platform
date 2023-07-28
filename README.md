@@ -1,8 +1,9 @@
 # Online-Shopping-Platform
 
-## Demo of the Webpage
+### Demo of the Webpage
 http://127.0.0.1:5500/SupermarketSite/index.html
 
+## Description
 This repository contains the front-end code for a dynamic Online Shopping Website. This modern, user-friendly interface has various key features including a shopping page, cart, payment portal, about page, and a blog page.
 
 ## Features
