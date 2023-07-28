@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>SuperMarket</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- font css -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,800;1,400&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      
+      </style>
+      
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script>
+         $(document).ready(function() {
+           // Hide all content initially
+           $(".content").addClass("hidden");
+           
+           // Show content based on selection
+           $("input[type='radio']").change(function() {
+             var selectedValue = $(this).val();
+             
+             // Hide all content
+             $(".content").addClass("hidden");
+             
+             // Show content based on selected value
+             $("#" + selectedValue).removeClass("hidden");
+           });
+         });
+         document.getElementById('option2').checked = true;
+       </script>
+   </head>
+   <body>
+      <div class="header_section">
+         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="vagetables.html">Shop Now</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="mycart.html">My Cart</a>
+                     </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                     <div class="search_icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+                  </form>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!-- header section end -->
+      <!-- layout_border start -->
+      <div class="container-fluid">
+         <div class="layout_border">
+            <!-- blog section start -->
+            <div class="blog_section layout_padding margin_bottom90">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h1 class="blog_taital">Our Blog</h1>
+                        <p class="blog_text">Passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid">
+        <div class="layout_border">
+           <!-- vagetables section start -->
+           <div class="vagetables_section layout_padding margin_bottom90">
+              <div class="container">         
+      <form class="vagetables_text">
+        <input type="radio" name="option" value="option1">  Celebrity Feedback<br>
+        <input type="radio" name="option" value="option2">  Customer Feedback<br>
+        <br><br>
+      </form>
+      
+      <div id="option1" class="content">
+        <h2>Celebrities using our brand</h2>
+        <p>
+           <div class="courses_section_2">
+              <div class="row">
+                 <div class="col-md-4">
+                    <div class="hover01 column">
+                       <figure><img src="images/anushka.jpg"></figure>
+                    </div>
+                    <h3 class="harshal_text">Anuskha Sharma</h3>
+                    <h3 class="rate_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus, nibh vel dapibus consequat, felis libero rhoncus erat, sed sodales diam dolor sit amet dui. Praesent pharetra ipsum eget ipsum cursus fringilla. Suspendisse nec scelerisque diam. Phasellus in placerat ex. Integer massa mauris, posuere ac sem et, suscipit viverra ipsum. </h3>
+                    
+                 </div>
+                 <div class="col-md-4">
+                    <div class="hover01 column">
+                       <figure><img src="images/download.jpeg"></figure>
+                    </div>
+                    <h3 class="harshal_text">Virat Kohli</h3>
+                    <h3 class="rate_text">Ut vitae dignissim lorem. Suspendisse aliquet lacinia ante, et pulvinar neque tristique et. Integer a tortor lacus. Donec sit amet ipsum lacinia, vehicula augue at, euismod turpis. Vivamus bibendum libero vestibulum molestie sollicitudin. Praesent ultricies condimentum enim ac lacinia.</h3>
+                    
+                 </div>
+                 <div class="col-md-4">
+                    <div class="hover01 column">
+                       <figure><img src="images/dhoni.png"></figure>
+                    </div>
+                    <h3 class="harshal_text">MS Dhoni</h3>
+                    <h3 class="rate_text">In ac mi ut sem vehicula vulputate nec vitae quam. Cras tincidunt nunc nec ullamcorper rhoncus. Praesent eget lorem sit amet nulla dignissim sagittis sed in turpis. Nunc vitae mauris fringilla, commodo lacus non, tristique dui. Sed tristique urna et vehicula porttitor. Nullam rhoncus fermentum leo, et scelerisque nulla mattis at.</h3>
+                   
+                 </div>
+              </div>
+           </div></p>
+      </div>
+     
+      
+      <div id="option2" class="content">
+       <h2>Our Satisfied Customers</h2>
+        <p>
+           <div class="vagetables_section_2">
+              <div class="row">
+                 <div class="col-md-4">
+                    <div class="hover01 column">
+                       <figure><img src="images/random1.jpg"></figure>
+                    </div>
+                    <h3 class="harshal_text">Clara George</h3>
+                    <h3 class="rate_text">In ac mi ut sem vehicula vulputate nec vitae quam. Cras tincidunt nunc nec ullamcorper rhoncus. Praesent eget lorem sit amet nulla dignissim sagittis sed in turpis. Nunc vitae mauris fringilla, commodo lacus non, tristique dui. Sed tristique urna et vehicula porttitor. Nullam rhoncus fermentum leo, et scelerisque nulla mattis at</h3>
+                    
+                 </div>
+                 <div class="col-md-4">
+                    <div class="hover01 column">
+                       <figure><img src="images/random2.jpg"></figure>
+                    </div>
+                    <h3 class="harshal_text">Mark Lielson</h3>
+                    <h3 class="rate_text">Ut vitae dignissim lorem. Suspendisse aliquet lacinia ante, et pulvinar neque tristique et. Integer a tortor lacus. Donec sit amet ipsum lacinia, vehicula augue at, euismod turpis. Vivamus bibendum libero vestibulum molestie sollicitudin. Praesent ultricies condimentum enim ac lacinia.</h3>
+                    
+                 </div>
+                 <div class="col-md-4">
+                    <div class="hover01 column">
+                       <figure><img src="images/random3..jpeg"></figure>
+                    </div>
+                    <h3 class="harshal_text">Fiona </h3>
+                    <h3 class="rate_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus, nibh vel dapibus consequat, felis libero rhoncus erat, sed sodales diam dolor sit amet dui. Praesent pharetra ipsum eget ipsum cursus fringilla. Suspendisse nec scelerisque diam. Phasellus in placerat ex. Integer massa mauris, posuere ac sem et, suscipit viverra ipsum.</h3>
+                 
+                 </div>
+              </div>
+           </div></p>
+      </div>
+      
+      
+
+
+
+
+     
+  </div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-sm-6">
+                  <h3 class="footer_text">Useful links</h3>
+                  <div class="footer_menu">
+                     <ul>
+                        <li class="active"><a href="index.html"><span class="angle_icon active"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Home</a></li>
+                        <li><a href="about.html"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>  About</a></li>
+                        <li><a href="services.html"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Services</a></li>
+                        <li><a href="domain.html"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Domain</a></li>
+                        <li><a href="testimonial"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>  Testimonial</a></li>
+                        <li><a href="contact.html"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>  Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <h3 class="footer_text">Address</h3>
+                  <div class="location_text">
+                     <ul>
+                        <li>
+                           <a href="#">
+                           <span class="padding_left_10"><i class="fa fa-map-marker" aria-hidden="true"></i></span>It is a long established fact that a<br> reader will be distracted</a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <span class="padding_left_10"><i class="fa fa-phone" aria-hidden="true"></i></span>(+71) 1234567890<br>(+71) 1234567890
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <span class="padding_left_10"><i class="fa fa-envelope" aria-hidden="true"></i></span>demo@gmail.com
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="footer_main">
+                     <h3 class="footer_text">Find Us</h3>
+                     <p class="dummy_text">more-or-less normal distribution </p>
+                     <div class="social_icon">
+                        <ul>
+                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                           <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+     
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+   </body>
+</html>
